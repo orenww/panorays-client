@@ -13,7 +13,7 @@ export async function getResult(requestId: string): Promise<number | null> {
     return response.data.result;
   } catch (error: any) {
     if (error.response?.status === 400) {
-      console.log(error.response.data);
+      // console.log(error.response.data);
       return null;
     }
     throw error;
